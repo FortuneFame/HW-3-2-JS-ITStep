@@ -1,0 +1,130 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+ul,
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ------------------------------- Task 1 ------------------------------- */
+
+.week {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dayWeek {
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #212121;
+    border-radius: 15px;
+}
+
+.day {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.btn {
+    color: #212121;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #212121;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: #ff6b08;
+    color: #ffffff;
+    border-color: #ff6b08;
+    box-shadow: 0px 0px 5px 2px rgba(255, 107, 8, 0.29);
+}
+
+.active{
+    background-color: #ff6b08;
+    color: #ffffff;
+    border-color: #ff6b08;
+    box-shadow: 0px 0px 5px 2px rgba(255, 107, 8, 0.29);
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.btn:first-child{
+    margin-right: 20px;
+}
+
+/* ------------------------------- Task 2 ------------------------------- */
+
+.tableMulti{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+table{
+    border: 1px solid #212121;    
+    border-collapse: collapse;
+    font-weight: 500;
+}
+td{
+    border: 1px solid #212121;
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    margin: 0;
+}
+
+td:first-child{
+    background-color: #ff6b08;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+tr:first-child{
+    background-color: #ff6b08;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* ------------------------------- Task 3 ------------------------------- */
+
+.randomNum{
+    text-align: center;
+}
+
+.par{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------- Task 4 ------------------------------- */
+
+
+
