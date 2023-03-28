@@ -96,45 +96,98 @@ table.innerHTML = text;
 
 function random() {
     document.getElementById('res').innerHTML = " ";
+    
     var randomNum = 0;
+
     do {
         randomNum = Math.floor(Math.random() * 20) + 1;
+    
     } while (randomNum % 3 == 0)
+    
     document.getElementById('res').innerHTML += randomNum;
+    document.getElementById('res').classList.add('num');
 }
 
 
+// //  Также добавила вариант через console.log
+
+
+
+// for (k = 1; k <= 10; k++) {
+//     var num = Math.floor(Math.random() * 20 + 1);
+//     if (num % 3 != 0) console.log(num)
+// }
 
 
 // ------------------------------- Task 4 ----------------------------------
 
 
+var btn = document.getElementById('btn');
+var quest = document.getElementById('quest');
+var small = document.getElementById('small');
+var big = document.getElementById('big');
 
 
 
+btn.addEventListener('click', function () {
+
+    quest.innerText = resN;
+    this.classList.add('hide');
+    small.parentNode.classList.remove('hide');
+    quest.classList.add('num')
+
+});
+
+var low = 0;
+var high = 120;
+var resN = Math.floor((low + high) / 2);
+
+function search() {
+    
+    return Math.floor((low + high) / 2);
+}
+
+small.addEventListener('click', function () {
+    
+    high = Number(quest.innerText);
+    quest.innerText = search();  
+
+});
+
+big.addEventListener('click', function () {
+
+    low = Number(quest.innerText);    
+    quest.innerText = search();  
+
+});
 
 
-        // 1.Зациклить вывод дней недели таким образом:
-        // «День недели.Хотите увидеть следующий день ?»
-        // и так до техпор, пока пользователь нажимает OK.
+// // Также добавила вариант через alert/prompt
 
-        // 2.Вывести таблицу умножения для всех чисел от 2 до 9.
-        // Каждое число необходимо умножить на числа от 1 до9.
 
-        // 3.Напишите скрипт, который выводит ровно 10 случайныхцелых чисел
-        // из диапазона 1–20, кроме тех, которыеделятся на 3.
 
-        // 4.Игра «Угадай число». 
-        // Предложить пользователю загадатьчисло от 1 до 120 
-        // и отгадать его следующим способом:
-        // каждую итерацию цикла делите диапазон чисел пополам,
-        // записываете результат в N и спрашиваете у пользователя
-        // «Ваше число > N, < N или == N ?». 
-        // В зависимости от тогочто указал пользователь,
-        // уменьшаете диапазон.
-        // Начальный диапазон от 1 до 120,
-        // поделили пополам иполучили 60. 
-        // Если пользователь указал, что его число > 60,
-        // то изменили диапазон на от 61 до 120. 
-        // И так до техпор, пока пользователь не выберет == N.
-        // Посчитайтеколичество попыток.
+// var min = 0;
+// var max = 120;
+// let resultTrue = 0;
+
+
+// alert("Загадайте число от 0 до 120");
+
+// while (true) {
+    
+//     let que = Math.floor((min + max) / 2);
+//     let ans = prompt("Ваше число ( > ) или ( < ) или ( = )   " + que);   
+
+//     if (ans === '>') {
+//         min = que + 1;
+//     }
+//     else if (ans === '<') {
+//         max = que - 1;
+//     } 
+//     else if (ans === '=') {
+//         alert("Ваше число:   " + que + "   Попыток:   " + resultTrue);
+//         break;
+//     }
+
+//     resultTrue++;
+// }

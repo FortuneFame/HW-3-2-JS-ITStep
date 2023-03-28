@@ -123,8 +123,37 @@ tr:first-child{
     font-weight: 600;
 }
 
-
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 40px;
+    border: 1px solid #212121;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: #ff6b08;
+    color: #ffffff;
+    border-color: #ff6b08;
+    box-shadow: 0px 0px 5px 2px rgba(255, 107, 8, 0.29);
+}
 /* ------------------------------- Task 4 ------------------------------- */
 
 
+.task4{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.h2, .h1{
+    margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}

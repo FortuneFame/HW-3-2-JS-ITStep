@@ -56,19 +56,30 @@
 <div class="container randomNum">
     <h1 class="title">Задание №3</h1>
 
-    <p class="par" id="res">
-        При нажатии на кнопку тут появится 
-        рандомное число (от 1 до 20),
-        которое не делится на 3
-    </p>
+    <div>
+        <p id="res" class="par">
+            При нажатии на кнопку тут появится
+            рандомное число (от 1 до 20),
+            которое не делится на 3
+        </p>
+
+    </div>
     <button class="btnRandom btn" onclick="random()">Выдать число</button>
 
 </div>
 
 <!-- ------------------------------- Task 4 ------------------------------- -->
 
-<div class="container">
+<div class="container task4">
     <h1 class="title">Задание №4</h1>
+
+    <p class="center h1">Загадайте число от 0 до 120 и нажмите на кнопку!</p>
+    <a class="btn" id="btn">Нажимай!</a>
+    <p id="quest" class="center h2"></p>
+    <div class="hide center">
+        <button class="btn" id="small">Меньше</button>
+        <button class="btn" id="big">Больше</button>
+    </div>
 </div>
 
    <script src="./js/task1.js"></script>
